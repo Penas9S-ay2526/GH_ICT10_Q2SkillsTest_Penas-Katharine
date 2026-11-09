@@ -1,0 +1,66 @@
+/* ===== GENERAL STYLING ===== */
+
+{ box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(135deg, #eaf2f8, #d6e4f0); min-height: 100vh; margin: 0; padding: 40px 15px; color: #1e3a5f; }
+
+/* ===== MAIN CONTAINER ===== */
+
+center { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+form { background: #ffffff; width: 100%; max-width: 450px; padding: 35px 30px; border-radius: 12px; border: 1px solid #cbd9e6; box-shadow: 0 8px 25px rgba(30, 58, 95, 0.12); position: relative; }
+
+/* ===== HEADING ===== */
+
+h5 { font-size: 20px; color: #174a7e; margin-bottom: 25px; font-weight: 600; }
+
+/* ===== INPUT FIELD ===== */
+
+input[type="text"] { width: 100%; padding: 13px 15px; border: 1.5px solid #b5c9dc; border-radius: 7px; background: #f7faff; color: #1e3a5f; font-size: 15px; outline: none; transition: 0.3s ease; }
+
+input[type="text"]::placeholder { color: #91a8bd; }
+
+input[type="text"]:focus { border-color: #2878b5; box-shadow: 0 0 0 3px rgba(40, 120, 181, 0.12); background: #ffffff; }
+
+/* ===== BUTTON ===== */
+
+input[type="button"] { width: 100%; padding: 13px; background: #245b8f; color: #ffffff; border: none; border-radius: 7px; font-size: 15px; font-weight: 600; cursor: pointer; transition: 0.3s ease; }
+
+input[type="button"]:hover { background: #17436d; box-shadow: 0 4px 12px rgba(23, 67, 109, 0.2); }
+
+input[type="button"]:active { transform: scale(0.98); }
+
+/* ===== DIVIDER ===== */
+
+hr { border: none; height: 2px; background: #dce7f0; margin: 25px 0; }
+
+/* ===== RESULTS SECTION ===== */
+
+#results { background: #f1f6fb; border: 1px solid #d1e0ed; border-left: 4px solid #2878b5; border-radius: 7px; padding: 20px; min-height: 120px; text-align: left; color: #294966; font-size: 15px; line-height: 2; }
+
+#results p { margin: 0; }
+
+/* ===== GEAR DECORATION ===== */
+
+form::before { content: "⚙"; position: absolute; top: 12px; right: 18px; font-size: 25px; color: #a9bfd3; }
+
+form::after { content: "⚙"; position: absolute; bottom: 12px; right: 18px; font-size: 18px; color: #c3d3e1; }
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 480px) { body { padding: 25px 15px; }
+
+form {
+    padding: 35px 20px;
+}
+
+h5 {
+    font-size: 19px;
+}
+
+input[type="button"] {
+    width: 100%;
+}
+
+
+}
